@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use('/oa',require('./routers/oa'));
 
 //连接数据库
-mongoose.connect('mongodb://hgq:hgq1024@139.224.118.0:27017/oa',{useMongoClient: true},function( err ){
+mongoose.connect('mongodb://****:***@139.224.118.0:27017/oa',{useMongoClient: true},function( err ){
     if( err ){
         console.log('数据库连接失败');
     }else{
